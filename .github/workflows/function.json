@@ -1,0 +1,25 @@
+{
+  "bindings": [
+    {
+      "name": "message",
+      "type": "twilioSms",
+      "direction": "out",
+      "accountSidSetting": "AC22a33de90a121677e51c2b38b5be97d9",
+      "authTokenSetting": "1fb41756caec26221fbdf863b1750498",
+      "to": "{toNumber}",
+      "from": "{fromNumber}"
+    },
+    {
+      "type": "httpTrigger",
+      "name": "req",
+      "direction": "in",
+      "authLevel": "anonymous",
+      "methods": ["post"]
+    },
+    {
+      "type": "http",
+      "name": "res",
+      "direction": "out"
+    }
+  ]
+}
